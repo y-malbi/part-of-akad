@@ -1,0 +1,41 @@
+.navbar {
+    margin-bottom: 0;
+
+    .navbar-toggle{
+    	.icon-bar{
+	    	background: $font-color;
+	    }
+	    &:hover{
+	    	background: none;
+	    }
+    }
+    .navbar-collapse{
+    	border-color: $font-color;
+
+    	@include extra-small {
+			background: rgba(255, 255, 255, 0.4);
+	    }
+    	
+    	.navbar-right{
+    		float: right;
+
+		    @include mili {
+				margin: 0; 
+		    }
+    	}
+    }
+
+	#main-menu{
+		li a{
+			color: $font-color;
+			font-family: $header-font;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			@include mili {
+				padding: 0 10px; 
+		    }
+		}
+	}
+}

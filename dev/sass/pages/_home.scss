@@ -1,0 +1,278 @@
+.homepage-first-section{
+	background: #fff url(../images/bg.jpg) center center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+	@include mili {
+		background: #fff;
+    }
+
+	h2{
+		display: inline-block;
+		width: auto;
+		padding: 7px 19px;
+		background: $theme-color;
+		text-transform: uppercase;
+		margin: 147px 0 0 0;
+		font-size: 18px;
+
+		@include extra-small {
+			margin-top: 100px; 
+	    }
+	    @include mili {
+			margin-top: 60px;
+			font-size: 16px; 
+	    }
+
+	}
+
+	h1{
+		text-transform: uppercase;
+		font-size: 48px;
+		padding: 16px 37px;
+		border: 10px solid $font-color;
+		margin: 0;
+		white-space: nowrap;
+
+		@include small {
+			font-size: 36px;
+		    padding: 16px 37px;
+		    border: 8px solid $font-color;
+		    width: 70%;
+		    margin: auto;
+		}
+		@include extra-small {
+			font-size: 32px;
+			border: 6px solid $font-color;
+	    }
+	    @include mili {
+			font-size: 20px;
+			width: 100%; 
+	    }
+
+	}
+
+	.section-text{
+		margin-top: 22px;
+    	line-height: 1.8;
+
+		&:last-child{
+			margin-bottom: 120px;
+
+			@include small {
+				margin-bottom: 80px;
+			}
+			@include extra-small {
+				margin-bottom: 40px;
+		    }
+		    @include mili {
+				margin-bottom: 20px;
+		    }
+		}
+	}
+	img{
+		position: absolute;
+		@include extra-small {
+			position: static;
+	    }  
+	}
+	.none{
+		@include mili {
+			display: none;
+	    }
+	}
+	.col-xs-6{
+		@include mili {
+			width: 100%;
+	    }
+	}
+}
+
+.home-post{
+	.section-title{
+		z-index: 1;
+		padding-top: 27px;
+		margin-bottom: 17px;
+		&:after{
+			content:"";
+		    top: 72%;
+		}
+		@include extra-small {
+			padding-top: 0;
+	    }
+	    @include mili {
+			font-size: 22px;
+	    }
+	}
+	p{
+		line-height: 2.15;
+		margin-top: 0;
+
+		&:last-of-type{
+			margin-bottom: 30px;
+		}
+		@include mili {
+			line-height: 1.7;
+	    }
+	}
+	.btn{
+		transform: translateY(36%);
+		padding: 19px 37px;
+	}
+}
+.choose-us {
+    padding: 200px 0 100px;
+	
+    @include small {
+		padding: 70px 0;
+    }
+    @include mili {
+		padding: 50px 0 20px;
+    }
+
+    .section-title{
+    	margin-bottom: 17px;
+    	@include mili {
+			font-size: 22px;
+	    }
+    }
+    .section-text{
+    	margin: 0 0 96px;
+    	line-height: 1.8;
+
+    	@include small {
+			margin-bottom: 40px;
+	    }
+	    @include extra-small {
+			margin-bottom: 15px;
+	    }
+    }
+    .col-xs-6{
+		@include mili {
+			width: 100%;
+	    }
+	}
+    .choose-post{
+    	margin-bottom: 31px;
+
+    	@include small {
+			padding-left: 30px;
+	    }
+	    @include extra-small {
+			text-align: center;
+			padding-left: 0;
+			margin-bottom: 15px;
+	    }
+	    .choose-icon{
+	    	line-height: 65px;
+	    	height: 65px;
+	    	@include mili {
+				line-height: 40px;
+    			height: 40px;
+		    }
+	    }
+	    img{
+	    	display: inline-block;
+	    }
+	    &.padding-left{
+	    	padding-left: 28px;
+	    	@include small {
+				padding-left: 0;
+		    }
+	    }
+	    p{
+	    	text-transform: uppercase;
+	    	margin: 0;
+	    }
+	    .article-title {
+		    margin-bottom: 17px;
+		}
+	}
+	img{
+		@include small {
+			margin: auto;
+	    }
+	    @include extra-small {
+			display: none;
+	    }
+	}
+}
+
+.portfolio{
+	.section-title{
+		margin-bottom: 17px;
+		@include mili {
+			font-size: 22px;
+	    }
+	}
+	.section-text{
+		margin-bottom: 100px;
+
+		@include small {
+			margin-bottom: 40px;
+	    }
+	}
+	.categories{
+		font-size: 30px;
+		line-height: 1.7;
+		margin: -15px 0 32px 0;
+
+		@include small {
+			font-size: 22px;
+			margin-bottom: 20px;
+	    }
+	    @include extra-small {
+			font-size: 18px;
+			margin-bottom: 10px;
+	    }
+	}
+	.btn{
+		display: block;
+		padding: 5px 19px;
+		height: auto;
+		background: transparent;
+		border: none;
+		color: $font-color;
+		margin-bottom: 17px;
+		&:hover,
+		&:active,
+		&:focus,
+		&.is-checked{
+			color: #fff;
+    		background: $theme-color;
+    		opacity: 1;
+    		outline: none;
+		}
+		
+		@include small {
+			display: inline-block;
+			padding: 5px 15px;
+	    }
+	    @include extra-small {
+			font-size: 12px;
+			padding: 5px 8px;
+	    }
+	}
+	.grid{
+		margin-bottom: 100px;
+
+		@include small {
+			margin-bottom: 50px;
+	    }
+	    @include extra-small {
+			margin-bottom: 0;
+	    }
+	}
+	.grid-item{
+	    margin-bottom: 30px;
+	    @include mili {
+			margin-bottom: 10px;
+	    }
+	}
+	.grid-item,
+	.grid-item-size{
+	    width: 260px;
+	}
+}
+
+

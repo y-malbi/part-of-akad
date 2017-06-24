@@ -1,0 +1,141 @@
+body{
+    background: #fff;
+    color: #60606e;
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 400;
+    line-height: 2.15;
+
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: $header-font;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin:0;
+}
+h3{
+	color: $font-color;
+}
+a{
+	text-decoration: none;
+	color: $font-color;
+	transition: color 0.5s ease;
+
+	&:hover{
+		color: $theme-color;
+	}
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rtdh3c');
+  src:  url('../fonts/icomoon.eot?rtdh3c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rtdh3c') format('truetype'),
+    url('../fonts/icomoon.woff?rtdh3c') format('woff'),
+    url('../fonts/icomoon.svg?rtdh3c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+
+
+
+.page-title{
+	font-size: 36px;
+	margin-bottom: 14px;
+}
+.section-title{
+	position: relative;
+	display: inline-block;
+	font-size: 30px;
+	margin-bottom: 21px;
+
+	&:after{
+		content:"";
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    z-index: -1;
+	    width: 68px;
+	    height: 22px;
+	    background: $theme-color;
+	}
+}
+.section-title-description{
+	text-transform: uppercase;
+    font-weight: 800;
+    font-family: $main-font;
+    margin-bottom: 21px;
+}
+.section-text {
+	line-height: 1.7;
+}
+.article-title{
+	font-size: 18px;
+}
+.row-margin{
+	margin-bottom: 30px;
+}
+
+.btn{
+	height: 50px;
+	background: $theme-color;
+	color: #fff;
+	text-transform: uppercase;
+	border: 1px solid $theme-color;
+	outline: none;
+	border-radius: 0;
+	font-weight: 700;
+	&:hover{
+		color: $theme-color;
+		background: #fff;
+		border-color: $theme-color;
+	}
+}

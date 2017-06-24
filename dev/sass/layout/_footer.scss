@@ -1,0 +1,100 @@
+.footer-menu{
+	margin-top: 43px;
+
+	@include small {
+		margin-top: 30px;
+    }
+    @include extra-small {
+		margin-top: 20px; 
+    }
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		display: inline-block;
+
+		&:first-child{
+			a{
+				padding-left: 0;
+			}
+		}
+
+		&:last-child{
+			a:after{
+				content: '';
+			}
+		}
+	}
+
+	a{
+		padding-left: 17px;
+		font-size: 14px;
+		color: #9a9a9a;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:after{
+			padding-left: 17px;
+			content: "-";
+		}
+
+		&:hover{
+			color: $theme-color;
+
+			&:after{
+				color: #9a9a9a;
+			}
+		}
+	}
+}
+
+.copyright{
+	margin: 43px 0 11px 0;
+	font-size: 14px;
+	color: #9a9a9a;
+	text-transform: uppercase;
+
+	@include small {
+		margin-top: 30px;
+    }
+    @include extra-small {
+		font-size: 12px;
+		margin: 0;
+		text-align: left;
+		text-transform: capitalize;
+    }
+}
+
+footer{
+	padding-bottom: 50px;
+
+	@include small {
+		padding-bottom: 30px;
+    }
+    @include extra-small {
+		padding-bottom: 15px;
+    }
+}
+.social-icons{
+	a{
+		padding: 5px;
+		color: $footer-font-color;
+		margin: 0 2px;
+		text-decoration: none;
+		font-size: 16px;
+
+		&:hover{
+			color: $theme-color;
+		}
+
+		&:last-child{
+			padding-right: 0;
+			margin-right: 0;
+		}
+	}
+	@include extra-small {
+		text-align: left;
+    }
+}	

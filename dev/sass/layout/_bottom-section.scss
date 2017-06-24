@@ -1,0 +1,91 @@
+.bottom-section{
+	background: $theme-color;
+	padding: 40px 0; 
+
+	@include extra-small {
+		padding: 20px 0; 
+    }
+	
+	.bottom-section-title{
+		padding-top: 0;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0 0 20px 0;
+		
+		@include small {
+			font-size: 22px;
+	    }
+		@include extra-small {
+			font-size: 18px;
+			display: block;
+			margin-bottom: 15px; 
+	    }
+
+	}
+	.btn{
+		@include small {
+			margin-bottom: 15px; 
+	    }
+	    @include mili {
+			width: 100%; 
+	    }
+	}
+}
+.bottom-section-form{
+	background: #fff;
+	padding: 22px 40px;
+
+	@include mili {
+		padding: 10px; 
+    }
+	.form-title{
+		width: 80%;
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 3px;
+
+		@include small {
+			width: 100%;
+			font-size: 16px; 
+	    }
+	    @include mili {
+			font-size: 14px; 
+	    }
+	}
+	.form-text{
+		color: $footer-font-color;
+		line-height: 1.7;
+		margin-bottom: 30px;
+		color: $footer-font-color;
+
+		@include extra-small {
+			margin-bottom: 10px;
+			font-size: 12px; 
+	    }
+	}
+	
+	.form-inline{
+		font-size: 0;
+	}
+
+	input.form-control{
+		padding: 16px 15px;
+		height: auto;;
+		width: 100%;
+		font-size: 12px;
+		font-family: $header-font;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-radius: 0;
+
+	}
+
+	.form-group{
+		width: calc(100% - 125px);
+		@include mili {
+			width: 100%; 
+	    }
+	}
+}
+
