@@ -67,6 +67,11 @@
 	
 	.form-inline{
 		font-size: 0;
+		.btn{
+			@include small {
+				margin-bottom: 0; 
+		    }
+		}
 	}
 
 	input.form-control{
@@ -83,7 +88,7 @@
 
 	.form-group{
 		width: calc(100% - 125px);
-		@include mili {
+		@include extra-small {
 			width: 100%; 
 	    }
 	}

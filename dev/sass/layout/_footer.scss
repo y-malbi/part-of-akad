@@ -47,6 +47,9 @@
 				color: #9a9a9a;
 			}
 		}
+		@include small {
+			padding: 10px;
+		}
 	}
 }
 
@@ -71,9 +74,6 @@ footer{
 	padding-bottom: 50px;
 
 	@include small {
-		padding-bottom: 30px;
-    }
-    @include extra-small {
 		padding-bottom: 15px;
     }
 }
@@ -93,7 +93,12 @@ footer{
 			padding-right: 0;
 			margin-right: 0;
 		}
+		@include small {
+			padding: 7px 10px;
+			font-size: 20px;
+	    }
 	}
+
 	@include extra-small {
 		text-align: left;
     }

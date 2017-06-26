@@ -225,9 +225,9 @@ input[type="submit"],
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase; }
-    @media (max-width: 580px) {
+    @media (max-width: 767px) {
       .navbar #main-menu li a {
-        padding: 0 10px; } }
+        padding: 10px 25px; } }
 
 .footer-menu {
   margin-top: 43px; }
@@ -259,6 +259,9 @@ input[type="submit"],
       color: #7beec7; }
       .footer-menu a:hover:after {
         color: #9a9a9a; }
+    @media (max-width: 991px) {
+      .footer-menu a {
+        padding: 10px; } }
 
 .copyright {
   margin: 43px 0 11px 0;
@@ -279,9 +282,6 @@ footer {
   padding-bottom: 50px; }
   @media (max-width: 991px) {
     footer {
-      padding-bottom: 30px; } }
-  @media (max-width: 767px) {
-    footer {
       padding-bottom: 15px; } }
 
 .social-icons a {
@@ -295,6 +295,10 @@ footer {
   .social-icons a:last-child {
     padding-right: 0;
     margin-right: 0; }
+  @media (max-width: 991px) {
+    .social-icons a {
+      padding: 7px 10px;
+      font-size: 20px; } }
 
 @media (max-width: 767px) {
   .social-icons {
@@ -356,6 +360,9 @@ footer {
         font-size: 12px; } }
   .bottom-section-form .form-inline {
     font-size: 0; }
+    @media (max-width: 991px) {
+      .bottom-section-form .form-inline .btn {
+        margin-bottom: 0; } }
   .bottom-section-form input.form-control {
     padding: 16px 15px;
     height: auto;
@@ -367,7 +374,7 @@ footer {
     border-radius: 0; }
   .bottom-section-form .form-group {
     width: calc(100% - 125px); }
-    @media (max-width: 580px) {
+    @media (max-width: 767px) {
       .bottom-section-form .form-group {
         width: 100%; } }
 
@@ -517,7 +524,7 @@ footer {
       display: inline-block; }
     .choose-us .choose-post.padding-left {
       padding-left: 28px; }
-      @media (max-width: 991px) {
+      @media (max-width: 1199px) {
         .choose-us .choose-post.padding-left {
           padding-left: 0; } }
     .choose-us .choose-post p {
@@ -525,6 +532,9 @@ footer {
       margin: 0; }
     .choose-us .choose-post .article-title {
       margin-bottom: 17px; }
+      @media (max-width: 1199px) {
+        .choose-us .choose-post .article-title {
+          font-size: 16px; } }
   @media (max-width: 991px) {
     .choose-us img {
       margin: auto; } }

@@ -154,7 +154,7 @@
 	}
     .choose-post{
     	margin-bottom: 31px;
-
+		
     	@include small {
 			padding-left: 30px;
 	    }
@@ -176,7 +176,7 @@
 	    }
 	    &.padding-left{
 	    	padding-left: 28px;
-	    	@include small {
+	    	@include medium {
 				padding-left: 0;
 		    }
 	    }
@@ -186,6 +186,9 @@
 	    }
 	    .article-title {
 		    margin-bottom: 17px;
+		    @include medium {
+				font-size: 16px;
+		    }
 		}
 	}
 	img{
